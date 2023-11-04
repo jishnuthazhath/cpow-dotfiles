@@ -19,6 +19,8 @@ return require('packer').startup(function(use)
 
   use 'wbthomason/packer.nvim'
   use 'tpope/vim-commentary'
+  use 'nvim-tree/nvim-tree.lua'
+  use 'nvim-tree/nvim-web-devicons'
   use 'ellisonleao/gruvbox.nvim'
   use 'dracula/vim'
   use { "catppuccin/nvim", as = "catppuccin" }
@@ -53,7 +55,7 @@ return require('packer').startup(function(use)
 
   use({
 	  'nvim-telescope/telescope.nvim',
-	  tag = '0.1.0',
+	  tag = '0.1.4',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   })
 
