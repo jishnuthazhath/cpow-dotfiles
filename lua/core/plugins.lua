@@ -24,7 +24,10 @@ return require('packer').startup(function(use)
   use 'ellisonleao/gruvbox.nvim'
   use 'dracula/vim'
   use { "catppuccin/nvim", as = "catppuccin" }
-  use 'nvim-lualine/lualine.nvim'
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = {'nvim-tree/nvim-web-devicons', opt = true}
+  }
   use 'nvim-treesitter/nvim-treesitter'
   use 'bluz71/vim-nightfly-colors'
   use 'vim-test/vim-test'
